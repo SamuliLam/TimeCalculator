@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+        tools {
+        maven 'Maven'
+        git 'Default'
+    }
+
     stages {
         stage('Checkout') {
             steps {
